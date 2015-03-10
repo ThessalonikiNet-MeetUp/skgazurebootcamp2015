@@ -872,3 +872,7 @@ a.navbar-brand img {
     max-width: 100px;
     margin-top: -25px;
 }
+
+#map-canvas {
+    height: 400px;
+}
