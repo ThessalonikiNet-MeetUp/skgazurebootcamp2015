@@ -1,86 +1,323 @@
 ﻿<!DOCTYPE html>
-<html data-ng-app="app">
+<html>
 <head>
-    <style>
-        /* This helps the ng-show/ng-hide animations start at the right place. */
-        /* Since Angular has this but needs to load, this gives us the class early. */
-        .ng-hide {
-            display: none!important;
-        }
-    </style>
-    <title data-ng-bind="title">Hot Towel Angular</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
 
-    <script>
-        // Must be first. IE10 mobile viewport fix
-        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
-            var msViewportStyle = document.createElement("style");
-            var mq = "@-ms-viewport{width:auto!important}";
-            msViewportStyle.appendChild(document.createTextNode(mq));
-            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-        }
-    </script>
+    <title>Thessaloniki Azure Bootcamp 2015</title>
 
-    <link href="content/ie10mobile.css" rel="stylesheet" />
-    <link href="content/bootstrap.min.css" rel="stylesheet" />
-    <link href="content/font-awesome.min.css" rel="stylesheet" />
-    <link href="content/toastr.css" rel="stylesheet" />
-    <link href="content/customtheme.css" rel="stylesheet">
-    <link href="content/styles.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-    <div>
-        <div data-ng-include="'/app/layout/shell.html'"></div>
-        <div id="splash-page" data-ng-show="false">
-            <div class="page-splash">
-                <div class="page-splash-message">
-                    Hot Towel Angular
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="Content/images/2015-logo-inverted-small.png" alt="Global Azure Bootcamp 2015" />
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#bootcamp">Azure Bootcamp</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#subjects">Subjects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sessions">Sessions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Thessaloniki Global Azure Bootacmp</div>
+                <div class="intro-heading">Let's be part of the global community for one day</div>
+                <a href="#subjects" class="page-scroll btn btn-xl">More Info</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Azure Bootcamp Section -->
+    <section id="bootcamp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Azure Bootcamp</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
-                <div class="progress progress-striped active page-progress-bar">
-                    <div class="bar"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-3">
+                    <a href="http://global.azurebootcamp.net/">
+                        <img class="img-centered img-responsive" src="Content/images/2015-logo_front.png" alt="Globa Azure Bootcamp 2015" />
+                    </a>
+                </div>
+                <div class="col-md-7 col-sm-9">
+                    <a href="http://global.azurebootcamp.net/">Azure Global Bootcamp</a>
+                    is an event that is organized the last years by local communities over the globe.
+                    It is an one day of deep dive class to help people get up to speed on developing Cloud Computing Applications for Azure.
+                    In addition to this great learning opportunity we will have another set of hands on labs.
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <span data-cc-scroll-to-top></span>
+    <!-- Subjects Section -->
+    <section id="subjects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Subjects</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Introduction to Microsoft Azure</h4>
+                    <p class="text-muted">
+                        During the event an extensive introduction about Microsoft Azure will take place.
+                        We will try to cover most of the platform's popular features.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Going beyond the basics</h4>
+                    <p class="text-muted">
+                        After the introduction we will present some more advanced characteristics.
+                        On top of this we are going to explore how a real application on Microsoft Azure looks like.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Building a real application</h4>
+                    <p class="text-muted">
+                        The ultimate goad of the event is to delve into writing code for the Azure.
+                        So half of the time of the event will be a workshop where we will build an application that uses the platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Vendor Scripts -->
-    <script src="scripts/jquery-2.1.3.js"></script>
-    <script src="scripts/angular.js"></script>
-    <script src="scripts/angular-animate.js"></script>
-    <script src="scripts/angular-route.js"></script>
-    <script src="scripts/angular-sanitize.js"></script>
-    <script src="scripts/bootstrap.js"></script>
-    <script src="scripts/toastr.js"></script>
-    <script src="scripts/moment.js"></script>
-    <script src="scripts/ui-bootstrap-tpls-0.10.0.js"></script>
-    <script src="scripts/spin.js"></script>
+    <!-- Sessions Section -->
+    <section id="sessions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sessions</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="http://lorempixel.com/200/200/business/8/" alt="" />
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>9:00 - 10:15</h4>
+                                    <h4 class="subheading">First session</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Short description for the first session</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="http://lorempixel.com/200/200/business/8/" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>10:30 - 11:45</h4>
+                                    <h4 class="subheading">Second session</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Short description of second session</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="http://lorempixel.com/200/200/business/8/" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>12:00 - 13:15</h4>
+                                    <h4 class="subheading">Third Session</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Short description of third session</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="http://lorempixel.com/200/200/business/8/" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>14:30 - 15:45</h4>
+                                    <h4 class="subheading">Fourth Session</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Short description of fourth session</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="http://lorempixel.com/200/200/business/8/" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>16:00 - 17:00</h4>
+                                    <h4 class="subheading">Fifth Session</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Short description of fifth session</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Bootstrapping -->
-    <script src="app/app.js"></script>
-    <script src="app/config.js"></script>
-    <script src="app/config.exceptionHandler.js"></script>
-    <script src="app/config.route.js"></script>
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Team</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="http://lorempixel.com/225/225/people/5/" class="img-responsive img-circle" alt="">
+                        <h4>Charalampos Karypidis</h4>
+                        <p class="text-muted">Lead Software Engineer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="http://lorempixel.com/225/225/people/5/" class="img-responsive img-circle" alt="">
+                        <h4>Konstantinos Ziazos</h4>
+                        <p class="text-muted">Lead Software Engineer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="http://lorempixel.com/225/225/people/5/" class="img-responsive img-circle" alt="">
+                        <h4>Stratos Kourtzanidis</h4>
+                        <p class="text-muted">Lead Software Engineer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- common Modules -->
-    <script src="app/common/common.js"></script>
-    <script src="app/common/logger.js"></script>
-    <script src="app/common/spinner.js"></script>
-
-    <!-- common.bootstrap Modules -->
-    <script src="app/common/bootstrap/bootstrap.dialog.js"></script>
-
-    <!-- app -->
-    <script src="app/admin/admin.js"></script>
-    <script src="app/dashboard/dashboard.js"></script>
-    <script src="app/layout/shell.js"></script>
-    <script src="app/layout/sidebar.js"></script>
-
-    <!-- app Services -->
-    <script src="app/services/datacontext.js"></script>
-    <script src="app/services/directives.js"></script>
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/respond.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="Scripts/classie.js"></script>
+    <script src="Scripts/cbpAnimatedHeader.min.js"></script>
+    <script src="Scripts/agency.js"></script>
 </body>
 </html>
