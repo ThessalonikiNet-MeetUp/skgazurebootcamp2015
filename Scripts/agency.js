@@ -19,7 +19,8 @@ $(function () {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
             center: latlng,
-            zoom: 17
+            zoom: 17,
+            scrollwheel: false
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
 
