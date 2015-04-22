@@ -923,3 +923,15 @@ a.navbar-brand img {
 .navbar-shrink li a:hover {
     color: #01a4ef;
 }
+
+.linkGlobalSponsor {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.linkGlobalSponsor img{
+    max-height: 80px;
+    max-width: 150px;
+}
